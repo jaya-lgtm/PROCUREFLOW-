@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-light: #3B82F6;
+  --color-primary-hover: #1D4ED8;
+  
+  --color-secondary: #1E293B;
+  --color-secondary-dark: #0F172A;
+  --color-secondary-light: #334155;
+  --color-secondary-hover: #1E293B;
+  
+  --color-success: #10B981;
+  --color-success-hover: #059669;
+  
+  --color-warning: #F59E0B;
+  --color-warning-hover: #D97706;
+  
+  --color-danger: #EF4444;
+  --color-danger-hover: #DC2626;
+  
+  --color-aiAccent: #8B5CF6;
+  --color-aiAccent-hover: #7C3AED;
+  --color-aiAccent-light: #A78BFA;
+  
+  --color-bgLight: #F8FAFC;
+  --color-bgDark: #0B0F19;
+  
+  --color-cardLight: #FFFFFF;
+  --color-cardDark: #1E293B;
+  
+  --color-textLight: #111827;
+  --color-textDark: #F9FAFB;
+  
+  --font-sans: 'Inter', sans-serif;
+}
+
+@utility purple-glass {
+  background: rgba(30, 20, 50, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+@utility purple-glass-card {
+  background: rgba(35, 25, 60, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+@utility purple-glow {
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.15);
+}
+
+@utility purple-glow-strong {
+  box-shadow: 0 0 35px rgba(139, 92, 246, 0.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
